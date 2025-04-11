@@ -37,6 +37,7 @@ async function scrapeFacebookAds() {
       resultsCount = resultsCount
         .replace("~", "")
         .replace("results", "")
+        .replace("result", "")
         .trim(); // Eltávolítjuk a "~" és "results" szavakat
       const link = window.location.href;
       return { resultsCount, link };
